@@ -1,14 +1,19 @@
-<h1>Stupid Coaching</h1>
-
 <div class="container">
 
+<h1>Stupid Coaching</h1>
+
+<p><%@question%></p>
+
+
 <%if @answer == "I'm going to work!"%>
-  <h1>Great!</h1>
+  <p>Great!</p>
 <%elsif @answer.end_with?("?")%>
-  <h1>Silly question, get dressed and go to work!</h1>
+  <p>Silly question, get dressed and go to work!</p>
 <%else%>
-  <h1>I don't care, get dressed and go to work!</h1>
+  <p>I don't care, get dressed and go to work!</p>
 <%end%>
+
+<p>-Your coach</p>
 
 <%= link_to "Ask a new question", ask_path%>
 </div>

@@ -2,19 +2,13 @@
 
 <h1>Stupid Coaching</h1>
 
-<div class="input-group mb-4">
-  <form action="answer" data-turbo="false">
-    <input class="form-control" type="text" name="answer">
-    <input class="input-group-text" type="submit" value="Ask!">
-  </form>
-</div>
+<label for="stupid-coach">Ask your coach anything</label>
 
-  <div class="input-group mb-4">
-    <form action="answer" data-turbo="false">
-      <input type="text" class="form-control" name="answer">
-      <span class="input-group-text" type="submit" value="Ask!">Ask!</span>
+  <div class="input-group mb-3">
+    <form action="/answer" data-turbo="false">
+      <input type="text" class="form-control" name="question">
+      <input class="btn btn-primary" type="submit" value="Ask!">
     </form>
   </div>
 
 </div>
-
